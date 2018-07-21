@@ -1,0 +1,356 @@
+/*京东首页css */
+.jd {
+	height: 480px;
+	position: relative;
+}
+
+.jd-inner {
+	height: 480px;
+	position: relative;
+	z-index: 1;
+}
+
+.ad {
+	height: 480px;
+	width: 100%;/*一定要写行内块元素需要宽高才能显示出来*/
+	background: url('../images/bg.png') no-repeat top center;
+	position: absolute;/* 行内块转换 */
+	top: 0;
+	left: 0;
+}
+
+.ad a {
+	display: block; /* 整个盒子都能被点所以要通栏显示 */
+	width: 100%;
+	height: 100%;
+}
+
+.jd-clo1 {
+	width: 190px;
+	height: 465px;
+	background-color: #6E6568;
+	float: left;
+	padding-top: 15px;
+}
+
+.jd-clo1 li {
+	padding-left: 10px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.jd-clo1 li a {
+	color: #fff;
+	font-size: 14px;
+}
+
+.jd-clo1 li span {
+	color: #fff;
+	font-size: 12px;
+}
+
+.jd-clo1 li:hover {
+	background-color: #999395;
+}
+
+.jd-clo2 {
+	width: 790px;
+	height: 480px;
+	float: left;
+	margin-left: 10px;
+}
+
+.jd-clo2-hd {
+	height: 340px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+
+.arr-l {
+	color: #fff;
+	font-size: 25px;
+	font-family: "icomoon";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -30px;
+	width: 30px;
+	height: 60px;
+	background: rgba(0, 0, 0, .3);
+	text-align: center;
+	line-height: 60px;
+	display: none;
+	border-radius: 2px;
+}
+
+.arr-r {
+	color: #fff;
+	font-size: 25px;
+	font-family: "icomoon";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -30px;
+	width: 30px;
+	height: 60px;
+	background: rgba(0, 0, 0, .3);
+	text-align: center;
+	line-height: 60px;
+	display: none;
+	border-radius: 2px;
+}
+
+.jd-clo2-hd ol {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -90px;
+	width: 180px;
+	height: 20px;
+	background: rgba(255, 255, 255, .3);
+	border-radius: 10px;
+}
+
+.jd-clo2-hd ol li {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin: 4px 5px;
+	cursor: pointer;
+}
+
+.jd-clo2-hd .current {
+	background-color: #f10215;
+}
+
+.jd-clo2-hd:hover .arr-l {
+	display: block;
+}
+
+.jd-clo2-hd:hover .arr-r {
+	display: block;
+}
+
+.jd-clo2-bd div {
+	width: 390px;
+	height: 130px;
+	float: left;
+}
+
+.jd-clo2-bd div img {
+	width: 100%;
+}
+
+.firstPic {
+	margin-right: 10px;
+}
+
+.jd-clo3 {
+	width: 190px;
+	height: 480px;
+	float: right;
+}
+
+.jd-clo3 a {
+	font-size: 12px;
+	color: #747474;
+}
+
+.user {
+	height: 95px;
+	padding: 20px 15px 0;
+}
+
+.user-info {
+	height: 40px;
+	padding-left: 51px;
+	font-size: 12px;
+	color: #747474;
+	line-height: 22px;
+	position: relative;
+}
+
+.user-info a {
+	font-size: 12px;
+	color: #747474;
+}
+
+.user-info a:hover {
+	color: #F10215;
+}
+
+.info-img {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.info-img img {
+	width: 100%;
+	height: auto; /* 自动跟随着宽度缩放 */
+	border-radius: 50%;	
+}
+
+.user-profit {
+	margin-top: 14px;
+}
+
+.user-profit a {
+	width: 70px;
+	height: 20px;
+	border: 2px solid #F10215;
+	display: inline-block;
+	color: #F10215;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.user-profit a:hover {
+	background-color: #F10215;
+	color: #fff;
+}
+
+.news {
+	height: 149px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 0px 15px 0;
+}
+
+.tab-hd {
+	border-bottom: 1px solid #ccc;
+	padding: 3px 0;
+	position: relative;
+}
+
+.tab-hd a {
+	font-size: 12px;
+	color: #747474;
+	margin: 0 4px;
+}
+
+.cuxiao {
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
+}
+
+.news .more1 {
+	position: absolute;
+	top: 6px;
+	right: 0;
+}
+
+.line {
+	width: 28px;
+	height: 2px;
+	background-color: #F10215;
+	position: absolute;
+	bottom: -1px;
+	left: 3px;
+}
+
+.tab-bd {
+	margin-top: 10px;
+}
+
+.tab-bd li {
+	height: 23px;
+	line-height: 23px;
+}
+
+.jd-service {
+	height: 209px;
+	width: 190px;
+	overflow: hidden;
+}
+
+.jd-service ul {
+	width: 200px; 
+}
+
+.jd-service li {
+	width: 47px;
+	height: 69px;
+	float: left;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.jd-service li a {
+	width: 100%;
+	height: 100%; /* 针对父亲 */
+	/* height: auto;  针对自己的高度宽度 */
+	display: block;
+}
+
+.jd-service li a i {
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin: 15px auto 8px;
+	background: url('../images/sprite_fs@1x.png') no-repeat;
+}
+
+.jd-service li a .huafei {
+	background-position: 0px -88px;
+}
+
+.jd-service li a .jipiao {
+	background-position: 0px -45px;
+}
+
+.jd-service li a .jiudian {
+	background-position: -44px -88px;
+}
+
+.jd-service li a .youxi {
+	background-position: -88px 0px;
+}
+
+.jd-service li a .qiyegou {
+	background-position: -88px -45px;
+}
+
+.jd-service li a .jiayouka {
+	background: url('../images/sprite_fs@1x.png') no-repeat;
+}
+
+.jd-service li a .dianyingpiao {
+	background-position: -44px -45px;
+}
+
+.jd-service li a .huochepiao {
+	background-position: -88px -88px;
+}
+
+.jd-service li a .zhongchou {
+	background-position: -130px 0px;
+}
+
+.jd-service li a .licai {
+	background-position: -130px -44px;
+}
+
+.jd-service li a .lipinka {
+	background-position: -130px -88px;
+}
+
+.jd-service li a .baitiao {
+	background-position: -44px 0px;
+}
+
+.jd-service li a p {
+	text-align: center;
+}
+
+
+
